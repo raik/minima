@@ -25,10 +25,10 @@
 		"layer0.inner_margin": [2, 2],
 		"layer0.opacity": 1.0,
 		"content_margin": [-1, 0, 0, 1],
-		"tab_overlap": 1,
-		"tab_width": 160,
+		"tab_overlap": 2,
+		"tab_width": 200,
 		"tab_min_width": 45,
-		"tab_height": 30,
+		"tab_height": 28,
 		"mouse_wheel_switch": false
 	},
 	{
@@ -62,7 +62,7 @@
 		// ### Tab hover state
 		"class": "tab_control",
 		"attributes": ["hover"],
-		"layer0.texture": "Theme - Minima/Assets/tab-active.png"
+		"layer0.texture": "Theme - Minima/Assets/tab-hover.png"
 	},
 
 	{
@@ -102,7 +102,7 @@
 		// ### Selected Tab Label
 		"class": "tab_label",
 		"parents": [{"class": "tab_control", "attributes": ["selected"]}],
-		"fg": [0, 154, 255],
+		"fg": [11, 156, 246],
 		"shadow_color": [255, 255, 255, 50],
 		"font.bold": true
 	},
@@ -456,7 +456,7 @@
 // ========================================================================
 	{
 		"class": "sidebar_container",
-		"layer0.tint": [205, 205, 205],
+		"layer0.tint": [50, 50, 50],
 		"layer0.opacity": 1.0,
 		"layer0.draw_center": false,
 		"layer0.inner_margin": [0, 0, 1, 0],
@@ -472,21 +472,21 @@
 		"indent_offset":32,
 		// "indent_offset":34,
 		"indent_top_level": false,
-		"layer0.tint": [236, 236, 236],
+		"layer0.tint": [58, 58, 58],
 		"layer0.opacity": 1.0
 	},
 // ## Sidebar rows
 // ========================================================================
 	{
 		"class": "tree_row",
-		"layer0.tint": [81, 159, 254],
-		// "layer0.texture": "Theme - Soda/Soda Light/sidebar-row-selected.png",
+		"layer0.texture": "Theme - Minima/Assets/sidebar-row-selected.png",
 		"layer0.opacity": 0.0,
 		"layer0.inner_margin": [1, 1]
 	},
 	{
 	// ### Sidebar row selected
 		"class": "tree_row",
+		// "color": [50, 50, 50],
 		"attributes": ["selected"],
 		"layer0.opacity": 1.0
 	},
@@ -495,19 +495,19 @@
 // ========================================================================
 	{
 		"class": "sidebar_heading",
-		"color": [165, 165, 165],
+		"color": [110, 110, 110],
 		"font.bold": false,
-		"shadow_color": [255, 255, 255],
-		"shadow_offset": [0, 1]
+		// "shadow_color": [255, 255, 255],
+		"shadow_offset": [0, 0]
 	},
 
 // ## Sidebar entry
 // ========================================================================
 	{
 		"class": "sidebar_label",
-		"color": [87, 87, 87],
-		"shadow_color": [255, 255, 255, 50],
-		"shadow_offset": [0, 1]
+		"color": [210, 210, 210],
+		// "shadow_color": [255, 255, 255, 50],
+		"shadow_offset": [0, 0]
 	},
 
 // ## Sidebar folder entry
@@ -515,13 +515,15 @@
 	{
 		"class": "sidebar_label",
 		"parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-		"color": [87, 87, 87],
+		"color": [150, 150, 150],
+		"shadow_color": [50, 50, 50],
+		"shadow_offset": [0, -1],
 		"font.bold": true
 	},
 	{
 		"class": "sidebar_label",
 		"parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
-		"color": [45, 56, 68]
+		"color": [118, 205, 255]
 	},
 	{
 		"class": "sidebar_label",
@@ -541,8 +543,8 @@
 	{
 		"class": "sidebar_label",
 		"parents": [{"class": "tree_row", "attributes": ["selected"]}],
-		"color": [255, 255, 255],
-		"shadow_color": [34, 94, 145],
+		"color": [190, 190, 190],
+		"shadow_color": [0, 0, 0],
 		"shadow_offset": [0, 1]
 	},
 
